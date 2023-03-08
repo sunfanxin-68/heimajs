@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    span {
+        display:inline-block;
+        padding: 5px 10px;
+        border: 1px solid blue;
+        margin: 2px;
+        border-radius: 5px;
+
+    }
+
+</style>
+</head>
+<body>
+    <script>
+//         let row = +prompt('行数？')
+//         let col = +prompt('列数？')
+//         //外层循环行数をプリント
+//         for (i = 1; i <= row; i++){ 
+//             //中の循环个数をプリント
+
+//             for (j = 1; j <= col; j++){
+//        document.write('★')
+
+//     }
+//   
+//     document.write('<br>')
+// }
+       
+        //外层循环打印行数
+        for (i = 1; i <= 9; i++){ 
+            //里层循环打印个数
+           for (j = 1; j <= i; j++){
+       document.write(`<span>${j} x ${i} = ${i * j} </span>`)
+
+    }
+   
+    document.write('<br>')
+}
+
+    </script>
+</body>
+</html>

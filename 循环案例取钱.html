@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.循环始まる
+        //2.残高用意
+        let money = 1000
+        while (true) {
+            let sel = +prompt(`
+            選択して下さい：
+            １。振り込み
+            ２。取り出し
+            ３。残高
+            ４。退出
+            `)
+            //もし4を入力したら　循環を退出する　如果输出4 则退出循环break
+            if (sel === 4){
+                break
+            }
+            //入力通り操作する
+            switch(sel){  //振り込み
+                case 1: 
+              let save = +prompt('振り込み金額入力下さい')
+              money = money + save
+              break;  
+              case 2 :  //取り出し
+                let withdraw = +prompt('取り出し金額入力下さい')
+                money = money - withdraw
+                break
+                case 3 :  //残高みる
+                    alert(`残高は${money}`)
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

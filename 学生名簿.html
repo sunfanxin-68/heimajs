@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        tr {
+            height: 40px;
+            cursor: pointer;
+        }
+
+        table tr:nth-child(1) {
+            background-color: #ddd;
+        }
+
+        table tr:not(:first-child):hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>学生情報</h2>
+    <p>ページの中データレンダリング.</p>
+
+    <table>
+        <caption>学生名簿</caption>
+        <tr>
+            <th>番号</th>
+            <th>お名前</th>
+            <th>年齢</th>
+            <th>性別</th>
+            <th>故郷</th>
+        </tr>
+
+        <script>
+            //データ用意
+            let students = [
+                {name:'aki', age: 18, gender: '男', hometown: '東京'},
+                {name:'yuji', age: 19, gender: '男', hometown: '千葉'},
+                {name:'yosito', age: 18, gender: '女' , hometown: '長野'},
+                {name:'morita', age: 17, gender: '男', hometown: '横浜'},
+                {name:'oowada', age: 16, gender: '男', hometown: '埼玉'},
+        
+            ]
+            //レダリング
+            for (let i = 0; i < students.length; i++){
+                document.write(`
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${students[i].name}</td>
+                    <td>${students[i].age}</td>
+                    <td>${students[i].gender}</td>
+                    <td>${students[i].hometown}</td>
+                </tr> 
+                `)
+        
+            }
+            
+        </script>
+       
+        
+    </table>
+
+
+</body>
+
+</html>

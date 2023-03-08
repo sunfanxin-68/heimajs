@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.ユーザー输入
+       /* let score = +prompt('成績輸入')
+        //2判断输出
+        if (score >= 700) {
+            alert('ようこそ')
+        } */
+    
+        /*let uname = prompt('名前: ')
+        let ps = prompt('パスワード: ')
+
+        if (uname === 'rain' && ps === '123'){
+            alert('登録成功')
+        
+        }else {
+            alert('間違えてます')
+        } */
+    
+        let year = prompt('年を輸入してください ')
+
+        if ( year % 4 === 0 && year % 100 !== 0 || year % 100 === 0){
+            alert(` ${year}是闰年`)
+        
+        }else {
+            alert(` ${year}是平年`)
+        }
+
+
+
+    </script> 
+</body>
+</html>

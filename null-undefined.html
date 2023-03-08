@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //null はまだ作られてない対象
+        let arr = null
+        console.log(arr) //print null
+        //変数を定義したけど数値与えてないのが undefined
+        //もし変数がundefinedなら、数値がまだ伝送してない
+        console.log(undefined + 1) //print NaN
+        //nullは空
+        //もし変数の中オブジェクト入れる予定だけど、まだ準備出来てないなら nullを入れていい
+        console.log(null + 1)  //print 1
+
+    </script>
+</body>
+</html>

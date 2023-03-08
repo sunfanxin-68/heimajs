@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.ユーザーが 2個数字を入力して 操作 + - * /
+        let num1 = +prompt('1個目の数字入力ください')
+        let num2 = +prompt('2個目の数字入力ください')
+        let sp = prompt('＋ー＊/のどちらを入力ください')
+      //2.判断输出
+      switch(sp){
+        case '+':
+        alert(`＋の答えは${num1 + num2}`)
+        break;
+         case '-':
+        alert(`-の答えは${num1 - num2}`)
+        break;
+        case '*':
+        alert(`*の答えは${num1 * num2}`)
+        break;
+        case '/':
+        alert(`/の答えは${num1 / num2}`)
+        break;
+        default:
+            alert('エラー')
+
+      }
+
+
+        
+    </script>
+    
+</body>
+</html>

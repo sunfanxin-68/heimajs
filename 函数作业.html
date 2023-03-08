@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    function sum(x,y){
+    //     let res = x + y
+    //     return res
+    //    }
+    //    let te = sum(8,3)
+    //    document.write(`両者相加は${te}`)
+
+       function changeNum(x,y){
+        let temp = x  //xの数値をtempにあげる　　把x的值给temp
+        x = y    //またyの数値をxにあげる　　　再把y的值给x
+        y = temp  //最後tempの中のxの数値をyにあげる　　最后把temp里x的值给y
+        document.write(`1個目の値は${x} <br> 2個目の値は${y}`)
+       }
+       changeNum(5,6)
+       changeNum(`red`,`blue`)
+    </script>
+</body>
+</html>
